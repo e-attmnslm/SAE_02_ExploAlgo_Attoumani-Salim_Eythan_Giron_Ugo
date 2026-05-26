@@ -1,9 +1,9 @@
 public class Arc {
-    private int poids;
-    private String cible;
+    public int poids;
+    public Noeud cible;
 
-    public Arc(String idNoeudCible, int poids) {
-        this.cible = idNoeudCible;
+    public Arc(Noeud noeud, int poids) {
+        this.cible = noeud;
         this.poids = poids;
     }
 }
