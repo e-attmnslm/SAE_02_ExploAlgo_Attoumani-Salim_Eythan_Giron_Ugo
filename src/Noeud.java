@@ -11,4 +11,7 @@ public class Noeud {
         this.nom = nom;
         this.adj = new ArrayList<>();
     }
+    public void ajouter(Arc a){
+        this.adj.add(a);
+    }
 }
