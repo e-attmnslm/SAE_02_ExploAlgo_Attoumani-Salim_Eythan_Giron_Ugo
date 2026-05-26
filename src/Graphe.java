@@ -1,6 +1,6 @@
 import java.util.List;
 
 public interface Graphe {
-    List<String> recuplnoeud();
-    List<Arc> recuplarc();
+    public List<String> recupNoeuds();
+    public List<Arc> recupArcs();
 }
