@@ -7,6 +7,7 @@ public class Arcs {
     public void ajouter(Arc a){
         liste.add(a);
     }
+
     public List<Arc> getListe(){
         return this.liste;
     }
