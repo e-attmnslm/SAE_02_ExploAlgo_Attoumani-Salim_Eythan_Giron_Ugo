@@ -9,6 +9,6 @@ public class Noeud {
     public Noeud(String id, String nom) {
         this.id = id;
         this.nom = nom;
-        this.adj = new ArrayList<Noeud>();
+        this.adj = new ArrayList<>();
     }
 }

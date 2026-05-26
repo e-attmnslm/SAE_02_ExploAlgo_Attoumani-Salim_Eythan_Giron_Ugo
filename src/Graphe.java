@@ -1,6 +1,6 @@
 import java.util.List;
 
 public interface Graphe {
-    List<String> getNoeuds();
+    List<Noeud> getNoeuds();
     List<Arc> getArcs();
 }

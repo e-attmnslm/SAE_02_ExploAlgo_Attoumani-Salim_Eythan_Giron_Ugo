@@ -1,16 +1,20 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class GrapheListe implements Graphe {
-    private Arcs arcs;
-    public GrapheListe(Arcs a){
-        this.arcs =a;
-    }
-    public List<String> recupNoeuds(){
-        List
+    public Arcs arcs;
+
+    @Override
+    public List<Noeud> getNoeuds() {
+        return arcs.getListe()
+                .stream()
+                .map(arc -> arc.cible)
+                .toList();
     }
 
-    public List<Arc> recupArcs(){
-
+    @Override
+    public List<Arc> getArcs() {
+        return arcs.getListe();
     }
 
 
