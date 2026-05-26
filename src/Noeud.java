@@ -4,11 +4,11 @@ import java.util.List;
 public class Noeud {
     public String id;
     public String nom;
-    public List<Noeud> adj;
+    public List<Arc> adj;
 
     public Noeud(String id, String nom) {
         this.id = id;
         this.nom = nom;
-        this.adj = new ArrayList<Noeud>();
+        this.adj = new ArrayList<>();
     }
 }
