@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Valeurs {
 
-    Map<String, Double> valeur = new HashMap<>();
-    Map<String, String> parent = new HashMap<>();
+    private final Map<String, Double> valeur = new HashMap<>();
+    private final Map<String, String> parent = new HashMap<>();
 
 
     public void setValeur(String nom, double valeur) {

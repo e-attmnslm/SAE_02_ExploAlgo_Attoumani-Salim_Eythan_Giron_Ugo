@@ -12,10 +12,7 @@ public class MainBellmanFord {
 
         Graphe graphe = LireReseau.lire("STAN.GTFS/stan.nodes.txt", "STAN.GTFS/stan.edges.txt");
 
-        BellmanFord bf = new BellmanFord();
-        Valeurs resultats = bf.resoudre(graphe, depart);
-
-        List<String> chemin = resultats.calculerChemin(arrivee);
+        List<String> chemin = BellmanFord.resoudre(graphe, depart).calculerChemin(arrivee);
 
         System.out.println(chemin.isEmpty() ? "" : String.join(";", chemin));
     }

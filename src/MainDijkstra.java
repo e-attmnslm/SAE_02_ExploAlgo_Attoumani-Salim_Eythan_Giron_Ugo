@@ -10,9 +10,7 @@ public class MainDijkstra {
         String idArrivee = getIdFromArg(args[1]);
 
         Graphe graphe = LireReseau.lire("STAN.GTFS/stan.nodes.txt", "STAN.GTFS/stan.edges.txt");
-        Dijkstra dijkstra = new Dijkstra();
-        Valeurs resultats = dijkstra.resoudre(graphe, idDepart);
-        List<String> chemin = resultats.calculerChemin(idArrivee);
+        List<String> chemin = Dijkstra.resoudre(graphe, idDepart).calculerChemin(idArrivee);
 
         System.out.println(chemin.isEmpty() ? "" : String.join(";", chemin));
     }

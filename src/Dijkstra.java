@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Dijkstra {
 
-    public Valeurs resoudre(Graphe g, String debut) {
+    public static Valeurs resoudre(Graphe g, String debut) {
 
         Valeurs resultats = new Valeurs();
         List<Noeud> list = new ArrayList<>();
@@ -38,7 +38,7 @@ public class Dijkstra {
         return resultats;
     }
 
-    private Noeud trouverMin(List<Noeud> q, Valeurs vls) {
+    private static Noeud trouverMin(List<Noeud> q, Valeurs vls) {
         Noeud min = q.get(0);
         for (Noeud n : q) {
             // Comparaison des valeurs stockées dans l'objet Valeurs
@@ -49,7 +49,7 @@ public class Dijkstra {
         return min;
     }
 
-    private Noeud chercherNoeud(List<Noeud> liste, String id) {
+    private static Noeud chercherNoeud(List<Noeud> liste, String id) {
         for (Noeud n : liste) {
             if (n.getId().equals(id)) return n;
         }

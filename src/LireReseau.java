@@ -26,7 +26,7 @@ public class LireReseau {
                 }
             }
         } catch (IOException e) {
-            System.err.println("Erreur lors de la lecture des stations : " + e.getMessage());
+            System.out.println("Erreur lors de la lecture des stations : " + e.getMessage());
         }
 
         // Lecture des Arcs
@@ -48,7 +48,7 @@ public class LireReseau {
                 }
             }
         } catch (IOException e) {
-            System.err.println("Erreur lors de la lecture des connexions : " + e.getMessage());
+            System.out.println("Erreur lors de la lecture des connexions : " + e.getMessage());
         }
 
         return graphe;

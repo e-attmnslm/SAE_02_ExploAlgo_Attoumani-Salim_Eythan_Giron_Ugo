@@ -2,13 +2,7 @@ import java.util.List;
 
 public class BellmanFord {
 
-    /**
-     *
-     * @param g
-     * @param depart
-     * @return
-     */
-    public Valeurs resoudre(Graphe g, String depart) {
+    public static Valeurs resoudre(Graphe g, String depart) {
         Valeurs res = new Valeurs();
         List<Noeud> noeuds = g.getNoeuds();
         double vMax = Double.MAX_VALUE;

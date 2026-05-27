@@ -28,42 +28,25 @@ public class Noeud{
 
 
     public String toString() {
-        String string = this.nom + " - > ";
+        StringBuilder string = new StringBuilder(this.nom + " - > ");
         List<Arc> liste = this.arcs.getListe();
 
-        for (int i = 0; i < liste.size(); i++) {
-            Arc arc = liste.get(i);
+        for (Arc arc : liste) {
             String nomCible = arc.getCible().toUpperCase();
-
-            string = string + nomCible + "(" + (int)arc.getPoids() + ") ";
+            string.append(nomCible).append("(").append((int) arc.getPoids()).append(") ");
         }
+
         return string + "\n";
     }
 
     private double valeur;
     private Noeud parent;
 
-    /**
-     *
-     * @return
-     */
     public double getValeur() { return valeur; }
 
-    /**
-     *
-     * @param v
-     */
     public void setValeur(double v) { this.valeur = v; }
 
-    /**
-     *
-     * @return
-     */
     public Noeud getParent() { return parent; }
 
-    /**
-     *
-     * @param p
-     */
     public void setParent(Noeud p) { this.parent = p; }
 }
