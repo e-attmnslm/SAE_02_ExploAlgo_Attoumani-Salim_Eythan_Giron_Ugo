@@ -1,4 +1,11 @@
 import java.util.List;
+/**
+ * Point d'entrée principal pour l'évaluation et la comparaison des performances du réseau STAN.
+ * Cette classe charge l'intégralité de la structure du réseau depuis les fichiers physiques
+ * GTFS, résout le problème du plus court chemin en utilisant simultanément les algorithmes
+ * de Dijkstra et de Bellman-Ford, puis mesure précisément leurs temps d'exécution respectifs
+ * en millisecondes.
+ */
 
 public class MainTransport {
 

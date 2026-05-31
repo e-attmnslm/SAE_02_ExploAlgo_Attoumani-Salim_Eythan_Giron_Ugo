@@ -1,3 +1,11 @@
+/**
+ * Classe d'exécution principale de démonstration et de validation initiale.
+ * Cette classe permet de tester manuellement la construction de la structure d'un
+ * graphe (représenté par la figure 1 du sujet de SAÉ) en instanciant des nœuds,
+ * en créant des connexions et en affichant la structure finale en mémoire.
+ *
+
+ */
 public class Principale {
     public static void main (String[] args){
 

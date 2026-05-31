@@ -1,5 +1,9 @@
 import java.io.*;
 import java.util.Scanner;
+/**
+ * Cette classe extrait la structure d'un graphe à partir de fichiers de données textuels,
+ * instancie les entités correspondantes et assemble le graphe en mémoire.
+ */
 
 public class LireReseau {
 
@@ -41,6 +45,8 @@ public class LireReseau {
                         try {
                             double poids = Double.parseDouble(colonnes[2].trim());
                             graphe.ajouter(source, destination, poids);
+
+                            graphe.ajouter(destination, source, poids);
                         } catch (NumberFormatException e) {
                             System.err.println("Poids invalide sur la ligne : " + ligne);
                         }
