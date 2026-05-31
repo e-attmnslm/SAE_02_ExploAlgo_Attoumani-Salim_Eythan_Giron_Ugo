@@ -5,9 +5,10 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Suite de tests unitaires JUnit 5 pour valider la robustesse
- * et la justesse de l'algorithme de Bellman-Ford.
+ * Suite de tests unitaires JUnit 5 pour valider la robustesse de l'algorithme de Bellman-Ford.
+ *
  */
+
 public class TestBellmanFord {
 
     /**

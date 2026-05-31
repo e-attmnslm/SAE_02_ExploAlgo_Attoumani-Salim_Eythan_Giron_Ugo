@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Suite de tests unitaires JUnit 5 pour valider la robustesse
- * et la justesse de l'algorithme de Bellman-Ford.
+ * de l'algorithme de Dijkstra.
  */
 public class TestDijkstra {
 
@@ -37,7 +37,7 @@ public class TestDijkstra {
         // Assertions sur les coûts optimaux calculés
         assertEquals(0.0, resultats.getValeur("A"));
         assertEquals(2.0, resultats.getValeur("C"));
-        assertEquals(3.0, resultats.getValeur("B")); // 3.0 (via C) au lieu de 4.0 (direct)
+        assertEquals(3.0, resultats.getValeur("B"));
         assertEquals(6.0, resultats.getValeur("D"));
 
         // Validation de la reconstruction de l'itinéraire
